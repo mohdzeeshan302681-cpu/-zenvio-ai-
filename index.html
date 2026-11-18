@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090912">
+<title>ZENVIO AI — Create beyond limits</title>
+<style>
+:root{--bg:#090912;--panel:#121222;--panel2:#19192c;--line:#292941;--text:#f6f4ff;--muted:#a5a2bb;--purple:#9b72ff;--pink:#d36bff;--green:#5de0b0}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% -15%,#34205f 0,transparent 38%),var(--bg);color:var(--text);font:15px Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}.shell{display:flex;min-height:100vh}.sidebar{width:245px;padding:25px 17px;border-right:1px solid var(--line);background:#0c0c16;position:fixed;inset:0 auto 0 0;display:flex;flex-direction:column;z-index:5}.brand{font-size:23px;font-weight:850;letter-spacing:1px;padding:5px 12px 30px}.brand span{color:var(--purple)}.nav-label{font-size:11px;color:#77748e;text-transform:uppercase;letter-spacing:1.5px;padding:12px}.nav button{width:100%;border:0;background:transparent;color:var(--muted);text-align:left;padding:13px 14px;border-radius:12px;margin:3px 0}.nav button.active,.nav button:hover{background:#211b38;color:white}.nav button.active{box-shadow:inset 3px 0 var(--purple)}.side-bottom{margin-top:auto;background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:15px}.side-bottom p{font-size:12px;color:var(--muted);line-height:1.5}.main{margin-left:245px;width:calc(100% - 245px);padding:28px 4.5%;max-width:1600px}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:36px}.eyebrow{color:#bda8ff;text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:700}.top h1{font-size:25px;margin:5px 0}.credits{border:1px solid var(--line);background:var(--panel);border-radius:30px;padding:10px 15px;color:#ded8ff;font-size:13px}.hero{padding:42px;border:1px solid #3a2d5e;border-radius:25px;background:linear-gradient(120deg,rgba(75,46,133,.55),rgba(25,20,46,.92) 60%,rgba(31,20,48,.75));position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:#9b72ff22;filter:blur(35px);right:5%;top:0}.hero h2{font-size:clamp(30px,5vw,52px);line-height:1.08;max-width:650px;margin:12px 0}.hero p{color:#c3bdd8;max-width:560px;line-height:1.7}.gradient{background:linear-gradient(90deg,#c6a9ff,#f0a5ff);-webkit-background-clip:text;background-clip:text;color:transparent}.btn{border:0;border-radius:11px;padding:12px 18px;font-weight:750;background:linear-gradient(100deg,#8a61f5,#bd65e9);color:white;box-shadow:0 8px 25px #9b72ff25}.btn.secondary{background:#25243a;border:1px solid var(--line);box-shadow:none}.section-title{display:flex;justify-content:space-between;align-items:center;margin:30px 0 15px}.section-title h3{margin:0;font-size:19px}.muted{color:var(--muted)}.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.tool{padding:20px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(145deg,#171729,#10101b);min-height:150px}.tool .ico{font-size:25px}.tool h4{margin:15px 0 7px}.tool p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}.workspace{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}.card h3{margin:0 0 7px}.field{margin-top:18px}.field label{display:block;font-size:13px;color:#d4d0e3;margin-bottom:8px}.field textarea,.field input,.field select{width:100%;background:#0b0b15;color:white;border:1px solid var(--line);border-radius:11px;padding:13px;outline:none}.field textarea{min-height:115px;resize:vertical}.field textarea:focus,.field input:focus,.field select:focus{border-color:var(--purple)}.upload{border:1px dashed #61518b;background:#171528;border-radius:14px;padding:22px;text-align:center;color:var(--muted)}.upload input{display:none}.upload strong{display:block;color:#eee;margin:7px}.preview{max-width:100%;max-height:210px;border-radius:10px;margin-top:12px;display:none}.full{width:100%;margin-top:18px}.hidden{display:none!important}.page{display:none}.page.active{display:block}.empty{border:1px dashed var(--line);border-radius:15px;padding:35px;text-align:center;color:var(--muted)}.statgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}.stat{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:18px}.stat strong{font-size:25px;display:block;margin-top:8px}.plan{background:var(--panel);border:1px solid var(--line);padding:22px;border-radius:16px}.notice{font-size:12px;color:#bdb8d0;line-height:1.6;margin-top:15px}.mobile-menu{display:none}
+@media(max-width:850px){.sidebar{width:72px;padding:18px 9px}.brand{font-size:0;padding:8px 10px 25px}.brand:first-letter{font-size:23px}.nav-label,.nav button .navtext,.side-bottom{display:none}.nav button{text-align:center;font-size:19px;padding:13px 4px}.main{margin-left:72px;width:calc(100% - 72px);padding:22px 4%}.tools{grid-template-columns:1fr}.workspace{grid-template-columns:1fr}.hero{padding:28px 22px}.statgrid{grid-template-columns:1fr}.top{margin-bottom:24px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar">
+  <div class="brand">ZEN<span>VIO</span> AI</div>
+  <div class="nav-label">Workspace</div>
+  <nav class="nav">
+    <button class="active" data-page="home">⌂ <span class="navtext"> Overview</span></button>
+    <button data-page="create">✦ <span class="navtext"> AI Video Generator</span></button>
+    <button data-page="editor">▣ <span class="navtext"> AI Video Editor</span></button>
+    <button data-page="dashboard">▤ <span class="navtext"> Dashboard</span></button>
+    <button data-page="credits">◈ <span class="navtext"> Credits & Plans</span></button>
+    <button data-page="support">☏ <span class="navtext"> Support</span></button>
+  </nav>
+  <div class="side-bottom"><b>Bring your ideas to life</b><p>Your creative studio for AI-powered video. More tools coming soon.</p></div>
+</aside>
+<main class="main">
+<header class="top"><div><div class="eyebrow">AI CREATIVE STUDIO</div><h1 id="pageTitle">Welcome to ZENVIO AI</h1></div><div class="credits">◈ <span id="creditCount">20</span> demo credits</div></header>
+
+<section class="page active" id="home">
+  <div class="hero"><div class="eyebrow">CREATE WITHOUT LIMITS</div><h2>Turn your ideas into <span class="gradient">extraordinary videos.</span></h2><p>One creative workspace for AI video concepts, editing workflows and your content projects.</p><button class="btn" onclick="showPage('create')">Start creating&nbsp; →</button></div>
+  <div class="section-title"><h3>Your creative tools</h3><span class="muted">Explore the studio</span></div>
+  <div class="tools">
+    <article class="tool"><div class="ico">✦</div><h4>AI Video Generator</h4><p>Describe a scene and prepare a video generation request.</p></article>
+    <article class="tool"><div class="ico">▣</div><h4>AI Video Editor</h4><p>Upload a video and prepare an editing brief.</p></article>
+    <article class="tool"><div class="ico">◈</div><h4>Credits & Plans</h4><p>View your demo credit balance and planned account features.</p></article>
+  </div>
+  <div class="section-title"><h3>Recent projects</h3><button class="btn secondary" onclick="showPage('dashboard')">View dashboard</button></div>
+  <div id="homeRecent" class="empty">Your projects will appear here when you start creating.</div>
+</section>
+
+<section class="page" id="create">
+  <div class="section-title"><h3>AI Video Generator</h3><span class="muted">Create from a prompt</span></div>
+  <div class="workspace">
+    <div class="card"><h3>Describe your video</h3><p class="muted">Write the scene you want to create.</p>
+      <div class="field"><label for="prompt">Your prompt</label><textarea id="prompt" placeholder="A cinematic product shot of a sneaker rotating on a dark studio stage, dramatic purple lighting..."></textarea></div>
+      <div class="field"><label for="style">Video style</label><select id="style"><option>Cinematic</option><option>Aesthetic</option><option>Product advertisement</option><option>Social media reel</option><option>Animated</option></select></div>
+      <div class="field"><label for="ratio">Aspect ratio</label><select id="ratio"><option>9:16 — Reels / Shorts</option><option>16:9 — YouTube</option><option>1:1 — Square</option></select></div>
+      <button class="btn full" onclick="submitProject('Video generation')">Prepare generation request →</button>
+      <p class="notice">Demo interface: connect a video-generation API on the server before real AI video generation or credit deductions can happen.</p>
+    </div>
+    <div class="card"><h3>Creation preview</h3><p class="muted">Your project brief will be shown here.</p><div class="empty" id="genPreview">✦<br><br>Your next idea starts here.</div></div>
+  </div>
+</section>
+
+<section class="page" id="editor">
+  <div class="section-title"><h3>AI Video Editor</h3><span class="muted">Upload a source video</span></div>
+  <div class="workspace">
+    <div class="card"><h3>Upload your video</h3><p class="muted">Choose a video file from your device.</p>
+      <label class="upload" for="videoFile">＋<strong>Tap to choose a video</strong><span>MP4, MOV or WebM supported by your browser</span><input id="videoFile" type="file" accept="video/*"></label>
+      <video id="videoPreview" class="preview" controls></video>
+      <div class="field"><label for="editBrief">How should it be edited?</label><textarea id="editBrief" placeholder="Example: Make it a fast-paced social media reel with clean cuts and subtitles..."></textarea></div>
+      <button class="btn full" onclick="submitProject('Video editing')">Prepare editing request →</button>
+      <p class="notice">Demo interface: actual editing requires a connected video-processing service and secure backend.</p>
+    </div>
+    <div class="card"><h3>Editing ideas</h3><div class="tools" style="grid-template-columns:1fr"><div class="tool"><h4>⚡ Short-form reel</h4><p>Concise pacing for vertical social videos.</p></div><div class="tool"><h4>✧ Cinematic look</h4><p>Polished visual direction and mood.</p></div><div class="tool"><h4>字幕 Captions</h4><p>Plan readable subtitles for your content.</p></div></div></div>
+  </div>
+</section>
+
+<section class="page" id="dashboard">
+  <div class="section-title"><h3>Your Dashboard</h3><span class="muted">Local demo workspace</span></div>
+  <div class="statgrid"><div class="stat"><span class="muted">Demo credits</span><strong id="dashCredits">20</strong></div><div class="stat"><span class="muted">Projects created</span><strong id="projectCount">0</strong></div><div class="stat"><span class="muted">Account</span><strong style="font-size:18px">Guest</strong></div></div>
+  <div class="card"><h3>Project history</h3><div id="projectList" class="empty" style="margin-top:15px">No projects yet. Your prepared briefs will appear here.</div></div>
+</section>
+
+<section class="page" id="credits">
+  <div class="section-title"><h3>Credits & Plans</h3><span class="muted">Pricing setup preview</span></div>
+  <div class="statgrid"><div class="stat"><span class="muted">Available demo credits</span><strong id="planCredits">20</strong></div></div>
+  <div class="plan"><div class="eyebrow">STARTER</div><h2>Free preview</h2><p class="muted">Explore the interface and prepare project briefs.</p><h2>20 demo credits</h2><p class="notice">No payment is collected. Paid plans, real credits, checkout and account billing must be configured before launch.</p></div>
+</section>
+
+<section class="page" id="support">
+  <div class="section-title"><h3>Contact & Support</h3></div>
+  <div class="card"><h3>Need help with ZENVIO AI?</h3><p class="muted">Add your official support WhatsApp number to enable this contact button.</p><div class="field"><label for="waNumber">WhatsApp number (with country code)</label><input id="waNumber" placeholder="Example: 91XXXXXXXXXX" inputmode="numeric"></div><button class="btn" onclick="openWhatsApp()">Continue to WhatsApp →</button><p class="notice">Use a business/support number you are authorized to publish. The number is not saved to a server.</p></div>
+</section>
+</main>
+</div>
+<script>
+const titles={home:'Welcome to ZENVIO AI',create:'AI Video Generator',editor:'AI Video Editor',dashboard:'Your Dashboard',credits:'Credits & Plans',support:'Support'};
+let projects=[];
+function showPage(name){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===name));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===name));document.getElementById('pageTitle').textContent=titles[name]||'ZENVIO AI';}
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+function submitProject(type){
+ let prompt=type==='Video generation'?document.getElementById('prompt').value.trim():document.getElementById('editBrief').value.trim();
+ if(type==='Video editing'&&!document.getElementById('videoFile').files.length){alert('Please choose a video file first.');return;}
+ if(!prompt){alert('Please describe what you want to create.');return;}
+ const item={type,prompt,date:new Date().toLocaleString()};
+ projects.unshift(item);renderProjects();
+ const box=document.getElementById('genPreview');
+ if(type==='Video generation'){box.className='empty';box.textContent='Request prepared: '+prompt;}
+ alert('Your project brief has been saved in this browser. Real AI generation is not connected yet.');
+}
+function renderProjects(){
+ const html=projects.map(p=>`<div style="padding:14px 0;border-bottom:1px solid var(--line)"><b>${escapeHtml(p.type)}</b><p class="muted">${escapeHtml(p.prompt)}</p><small class="muted">${escapeHtml(p.date)}</small></div>`).join('');
+ document.getElementById('projectCount').textContent=projects.length;
+ document.getElementById('projectList').innerHTML=html||'No projects yet. Your prepared briefs will appear here.';
+ document.getElementById('homeRecent').innerHTML=html||'Your projects will appear here when you start creating.';
+}
+function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+document.getElementById('videoFile').addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;const v=document.getElementById('videoPreview');v.src=URL.createObjectURL(f);v.style.display='block';});
+function openWhatsApp(){const n=document.getElementById('waNumber').value.replace(/\D/g,'');if(n.length<10){alert('Enter a valid WhatsApp number with country code.');return;}window.open('https://wa.me/'+n,'_blank','noopener');}
+</script>
+</body>
+</html>
